@@ -141,8 +141,8 @@ TaxBuddy/
 
 ```bash
 # ใช้ Git ดาวน์โหลดโปรแกรม
-git clone <repository-url>
-cd TaxBuddy
+git clone https://github.com/ComSciThammasatU/2568-2_CS403_Final-Submission-68-1_17_nrc-r1.git
+cd 2568-2_CS403_Final-Submission-68-1_17_nrc-r1
 ```
 
 ### 2. ติดตั้งแบ็กเอนด์
