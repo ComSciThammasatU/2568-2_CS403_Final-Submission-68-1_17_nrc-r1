@@ -169,11 +169,6 @@ cd ../frontend
 # ติดตั้งไลบรารี่ที่จำเป็น
 npm install
 
-# สร้างไฟล์สิ่งแวดล้อม
-cp .env.example .env
-# แล้วแก้ไขไฟล์ .env ด้วย editor ตามที่อธิบายในส่วนถัดไป
-```
-
 ---
 
 ## การตั้งค่า
@@ -184,29 +179,14 @@ cp .env.example .env
 
 ```env
 # ฐานข้อมูล
-DATABASE_URL="postgresql://user:password@localhost:5432/taxbuddy"
-# หรือสำหรับ SQLite:
-# DATABASE_URL="file:./dev.db"
-# หรือสำหรับ MySQL/MariaDB (XAMPP):
-# DATABASE_URL="mysql://root:@localhost:3306/taxbuddy"
-
-# เซิร์ฟเวอร์
-PORT=5000
-NODE_ENV=development
+DATABASE_URL="mysql://root:@localhost:3306/taxbuddy"
 
 # JWT Token
-JWT_SECRET=your_jwt_secret_key_here
-JWT_EXPIRE=7d
+JWT_SECRET=supersecretkey123
 
 # Google OAuth
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
+GOOGLE_CLIENT_ID=xxxxxxxx.apps.googleusercontent.com
 
-# Email (ถ้าต้องการส่งอีเมล)
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_USER=your_email@gmail.com
-SMTP_PASS=your_app_password
 ```
 
 ### การติดตั้ง XAMPP
@@ -248,21 +228,6 @@ npx prisma migrate dev --name init
 
 # เพิ่มข้อมูลตัวอย่าง (ทางเลือก)
 npx prisma db seed
-```
-
-### การตั้งค่าเฟรนต์เอนด์
-
-สร้างไฟล์ `frontend/.env` และเพิ่มข้อมูลต่อไปนี้:
-
-```env
-# API Backend
-VITE_API_URL=http://localhost:5000/api
-
-# ภาษาเริ่มต้น
-VITE_DEFAULT_LANGUAGE=th
-
-# Google OAuth
-VITE_GOOGLE_CLIENT_ID=your_google_client_id
 ```
 
 ---
@@ -423,7 +388,7 @@ npm install
 
 ---
 
-## ข้อมูลอื่น ๆ
+## ข้อมูลอื่นๆ
 
 ### ไลบรารี่ที่ใช้
 
